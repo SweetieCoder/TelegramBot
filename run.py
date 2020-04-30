@@ -14,7 +14,7 @@ from telegram import InlineQueryResultArticle
 
 
 
-updater = Updater('1135653122:AAHMuouHoGfphkoRPQRAFjkom9owkDeoVdg')
+updater = Updater('TOKEN')
 
 def start(bot, update):
     #import pdb; pdb.set_trace()
@@ -59,11 +59,11 @@ def favor_handler_button(bot, update):
     descrption = 'درباره دوره اینجا نوشته میشود، کد ارسال شده {} میباشد'.format(data)
 
     if data == '1':
-        descrption = 'شرط اول'
+        descrption = 'first condition'
     elif data == '2':
-        descrption = 'شرط دوم'
+        descrption = 'second condition'
     else:
-        descrption = 'شرط سوم'
+        descrption = 'third condition'
 
     bot.editMessageText(text = descrption, chat_id = chat_id, message_id = message_id)
 
